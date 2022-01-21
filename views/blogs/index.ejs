@@ -1,0 +1,28 @@
+
+<%- include('../partials/head') %>
+<body>
+  <h1>blogs</h1>
+
+  
+  <a href="/blogs/new" class="btn btn-secondary">New Blog</a>
+
+
+<% for (let c of blogs) {%>
+<div class="card mb-2 mx-auto" style="width: 25rem;" >
+<%if(c.blogImg){ %>
+  <img src="<%= c.blogImg %>" class="card-img-top" style="height:20rem;"alt="...">
+<%} %>
+  
+  
+ 
+  <div class="card-body">
+    <h5 class="card-title"><%= c.blogTitle %></h5>
+    <p class="card-text"><%= c.blog %></p>
+    <a href="/blogs/<%= c.id %>" class="btn btn-primary">Details</a>
+  </div>
+</div>
+<%}%>
+
+
+</body>
+</html>

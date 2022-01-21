@@ -1,0 +1,20 @@
+
+<%- include('../partials/head') %>
+<body>
+ 
+  <!-- <p>blog id : <%= blog.id %></p> -->
+  <h2><%= blog.blogTitle %>  </h2>
+<div class="container-sm bg-light ">
+  <div>
+    <p><%= blog.blog %></p>
+    <img class="show-img" src="<%=blog.blogImg%>" >
+   
+  </div>
+</div>
+  <a href="/blogs" class="btn btn-primary m-3">Back to Index</a>
+  <a href="/blogs/<%= blog.id %>/edit " class="btn btn-primary">Edit blog</a>
+  <form method="POST"action="/blogs/<%= blog.id %>/?_method=DELETE">
+  <button class="btn btn-danger mt-5">DELETE</button>
+  </form>
+</body>
+</html>

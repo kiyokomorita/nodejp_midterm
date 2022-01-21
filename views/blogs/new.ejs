@@ -1,0 +1,20 @@
+
+<%- include('../partials/head') %>
+
+<body>
+  <h1>Make a new Blog</h1>
+  <form action="/blogs" method="post">
+    <section>
+    <label for="blogTitle">Enter blogTitle :</label>
+    <input type="text" id= "blogTitle" placeholder="blogTitle" name="blogTitle">
+  </section>
+    <section>
+      <label for="blog">blog Text</label>
+      <br>
+      <textarea name="blog" id="blog" cols="30" rows="5"></textarea>
+    </section>
+    <button>Submit</button>
+  </form>
+  <a href="/blogs">Back to index</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+<%- include('../partials/head') %>
+<body>
+  <h1>Edit</h1>
+  <form method="post" action="/blogs/<%= blog.id %>?_method=PATCH ">
+    <textarea name="blog" id="" cols="30" rows="10">
+      <%= blog.blog %> 
+    </textarea>
+    <button>Save</button>
+  </form>
+ 
+
+</body>
+</html>

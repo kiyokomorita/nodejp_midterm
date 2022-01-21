@@ -1,0 +1,27 @@
+body{
+  background-color: pink;
+  margin:0 auto;
+  align-items: center;
+  text-align: center;
+}
+.card{
+  align-items: center;
+}
+.card-content{
+  background-color: white;
+  
+}
+
+/* .blog-container{
+  background-color: white;
+} */
+
+.container-sm{
+  height: 500px;
+  border-radius: 10px;
+  padding:10px;
+}
+.show-img{
+  width: 300px;
+  height: auto;
+}
